@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main()
+{
+    int i,low,high,mid,n,key,arr[100];
+    int count=0;
+    count++;
+    count++;
+    count++;
+    count++;
+    count++;
+    count++;
+    printf("Enter number of elements");
+    count++;
+    scanf("%d",&n);
+    count++;
+    printf("Enter %d integers", n);
+    count++;
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&arr[i]);
+    count++;
+}
+count++;
+    printf("Enter value to search");
+    count++;
+    scanf("%d", &key);
+    count++;
+    low=0;
+    count++;
+    high=n-1;
+    count++;
+    mid=(low+high)/2;
+    count++;
+    while(low <= high)
+	{
+		count++;
+        if(arr[mid]<key)
+        {
+        low=mid+1;
+    }
+        else if (arr[mid]==key) 
+		{
+            count++;	
+            printf("%d found at location %d",key,mid+1);
+            break;
+        }
+        else
+            high=mid-1;
+            mid=(low+high)/2;
+            count++;
+    }
+    if(low > high)
+    printf("Not found in the array");
+    count++;
+    printf("\ntime complexity : %d",count);
+    return 0;
+}
