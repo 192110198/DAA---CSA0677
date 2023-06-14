@@ -1,0 +1,30 @@
+#include<stdio.h>   
+int main()    
+{    
+ int n1=0,n2=1,n3,i,number;  
+ int count=0; 
+ count++;  
+ printf("Enter the number of elements:");  
+ count++;   
+ scanf("%d",&number);
+ count++;    
+ printf("\n%d %d",n1,n2); 
+ count++; 
+ count++; 
+ for(i=2;i<number;++i)   
+ {  
+   count++;
+   count++;
+  n3=n1+n2; 
+  count++;   
+  printf(" %d",n3); 
+  count++;  
+  n1=n2;  
+  count++;  
+  n2=n3;  
+  count++;  
+ } 
+  count++;
+ printf("\ntime complexity is:%d",count);
+  return 0;  
+ }    
